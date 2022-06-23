@@ -7,7 +7,7 @@
     <title>Nacionalidade</title>
 </head>
 <body>
-    <h1>Sistema de Nacionalidade ?</h1>
+    <h1>Sistema de Nacionalidade</h1>
     qual é o seu pais: <input type="text" name="txtp" id="txtp">
     <input type="button" value="Verificar" onclick="Informa()">
     <div id="res">
@@ -19,9 +19,9 @@
            var res = window.document.querySelector('div#res')
            res.innerHTML = `<p>Seu pais é <strong> ${txtp.value}</strong></p>`
            if (txtp.value == 'Brasil'){
-            res.innerHTML += `<p>se voce é do ${txtp.value} entao vc é brasileiro</p>` 
+            res.innerHTML += `<p>se voce é do pais <strong> ${txtp.value}</strong> entao vc é Brasileiro</p>` 
            } else {
-             res.innerHTML += `<p> se voce é do ${txtp.value} entao vc é estrangeiro<p>`
+             res.innerHTML += `<p> se voce é do pais <strong> ${txtp.value}</strong> entao vc é Estrangeiro<p>`
            }
 
             
