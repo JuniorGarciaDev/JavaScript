@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculos Aritimetico</title>
+    <style>
+        body{
+            font: normal 25px arial;
+
+        }
+        input{
+            font: normal 25px arial;
+            width: 100px;
+        }
+        div#res{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1S" id="txtn1S"> +
+    <input type="number" name="txtn2S" id="txtn2S">
+    <input type="button" value="Somar" onclick="somar()" >
+    <div id="resS">Resultado</div>
+    <script>
+        function somar(){
+            var tn1 = window.document.getElementById('txtn1S')
+            var tn2 =  window.document.querySelector('input#txtn2S')
+            var res = window.document.getElementById('resS')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2 
+            res.innerHTML = `A soma entra ${n1} e ${n2} é igual a <strong> ${s} </strong> `
+        }
+    </script>
+
+<h1>MULTIPLICANDO Valores</h1>
+<input type="number" name="txtn1M" id="txtn1M"> *
+<input type="number" name="txtn2M" id="txtn2M">
+<input type="button" value="Multiplicaçao" onclick="Multiplicaçao()">
+<div id="resM">Resultado</div>
+<script>
+    function Multiplicaçao(){
+        var tn1 = window.document.getElementById('txtn1M')
+        var tn2 =  window.document.querySelector('input#txtn2M')
+        var res = window.document.getElementById('resM')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var s = n1 * n2 
+        res.innerHTML = `A Multiplicaçao entre ${n1} e ${n2} é igual a <strong> ${s} </strong> `
+    }
+</script>
+
+<h1>Divisao Valores</h1>
+<input type="number" name="txtn1D" id="txtn1D"> /
+<input type="number" name="txtn2D" id="txtn2D">
+<input type="button" value="Divisao" onclick="Divisao()">
+<div id="resD">Resultado</div>
+<script>
+    function Divisao(){
+        var tn1 = window.document.getElementById('txtn1D')
+        var tn2 =  window.document.querySelector('input#txtn2D')
+        var res = window.document.getElementById('resD')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var s = n1 / n2 
+        res.innerHTML = `A Divisao entre ${n1} e ${n2} é igual a <strong> ${s} </strong> `
+    }
+</script>
+
+<h1>Divisao Valores</h1>
+<input type="number" name="txtn1SUB" id="txtn1SUB"> -
+<input type="number" name="txtn2SUB" id="txtn2SUB">
+<input type="button" value="Subtraçao" onclick="Subtraçao()">
+<div id="resSUB">Resultado</div>
+<script>
+    function Subtraçao(){
+        var tn1 = window.document.getElementById('txtn1SUB')
+        var tn2 =  window.document.querySelector('input#txtn2SUB')
+        var res = window.document.getElementById('resSUB')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var s = n1 - n2 
+        res.innerHTML = `A Subtraçao entre ${n1} e ${n2} é igual a <strong> ${s} </strong> `
+    }
+</script>
+
+</script>
+</body>
+</html>
