@@ -1,0 +1,8 @@
+var inicio = 1
+var c = inicio
+var f  = 4 
+if( c <= f){
+    while  (c <= f){
+        console.log(`${c}`)
+    }
+} 
