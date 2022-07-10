@@ -20,7 +20,7 @@ function Adicionar(){
 
         contador = 1
 
-        if(totigual == 0 && num <= 100 && textonumero.value.length != 0){
+        if(totigual == 0 && num <= 100 && num > 0 &&textonumero.value.length != 0){
             n.push (num)
             res.innerHTML = ``
             analiseN.innerHTML = ''
